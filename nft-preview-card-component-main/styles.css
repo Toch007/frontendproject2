@@ -1,0 +1,164 @@
+:root {
+    --softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Blue-main: hsl(217, 54%, 11%);
+    --Blue-card: hsl(216, 50%, 16%);
+    --Blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--Blue-main);
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 520px;
+    background-color: var(--Blue-card);
+    border-radius: 10px;
+    display: flexbox;
+    justify-content: center;
+}
+
+.image-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+.bold {
+    color: var(--White);
+    font-weight: 600;
+    font-size: 18px;
+    font-family: outfit, sans-serif;
+    margin-left: 20px;
+}
+.bold:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: 0.5s;
+}
+strong:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.view {
+    display: flex;
+    width: 260px;
+    height: 260px;
+    margin: -265px 0 0 0;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.view:hover {
+    background: hsla(178, 100%, 50%, 0.5);
+}
+
+.view svg {
+    opacity: 0;
+}
+.view:hover svg {
+    opacity: 1;
+}
+
+.line {
+    width: 260px;
+    border: 1px solid var(--Blue-line);
+    margin-top: 18px;
+}
+
+p:nth-of-type(2) {
+    font-family: outfit, sans-serif;
+    color: var(--softblue);
+    margin: 20px;
+    font-weight: 400;
+}
+
+.eth object, 
+.eth p {
+    display: inline-block;
+    color: var(--Cyan);
+}
+
+.time object,
+.time p {
+    display: inline-block;
+    color: var(--softblue);
+}
+
+.eth, .line {
+    margin-left: 20px;
+}
+
+.eth, .time {
+    display: inline;
+    font-family: outfit, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+.time {
+    float: right;
+    margin-right: 20px;
+}
+
+.avatar object, .avatar p {
+    display: inline-block;
+    font-family: outfit, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+.lil {
+    width: 10px;
+}
+.lill {
+    width: 15px;
+}
+.ava {
+    width: 30px;
+}
+.avatar p {
+    color: var(--softblue);
+}
+strong {
+    color: var(--White);
+    font-family: outfit, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.avatar {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.lil, .lill, .ava {
+    margin-right: 10px;
+}
+
+.avatar object {
+    border: 1px solid var(--White);
+    border-radius: 100%;
+}
