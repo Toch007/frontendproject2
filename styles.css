@@ -131,7 +131,15 @@ p:nth-of-type(2) {
     font-weight: 300;
     font-size: 14px;
 }
-
+.lil {
+    width: 10px;
+}
+.lill {
+    width: 15px;
+}
+.ava {
+    width: 30px;
+}
 .avatar p {
     color: var(--softblue);
 }
@@ -146,8 +154,8 @@ strong {
     margin-top: 10px;
     margin-left: 20px;
 }
-object {
-    padding-right: 10px;
+.lil, .lill, .ava {
+    margin-right: 10px;
 }
 
 .avatar object {
